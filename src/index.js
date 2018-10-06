@@ -87,19 +87,15 @@ const asyncIncrementor = () => {
 
 const createIncrementer = () => {
 
-
-    var IncValue = 1;
-
-    var obj = {
-        value: 0,
-        next: function() {
-            this.value++;
-            console.log(this.value);
-            return this;
-        }
+    var a = [];
+    a.value = 0;
+    a.next = function() {
+        this.value++;
+        //console.log(this.value);
+        return this;
     }
-
-    return obj;
+    
+    return a;
 
 };
 
