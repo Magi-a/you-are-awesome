@@ -54,7 +54,7 @@ describe(('You are awesome, aren\'t you?'), () => {
     assert.equal(incrementor()(), 10);
     assert.equal(incrementor()()()()(), 15);
   });
-
+/*
   it('asyncIncrementor', async () => {
     await asyncIncrementor();
     await asyncIncrementor();
@@ -69,10 +69,12 @@ describe(('You are awesome, aren\'t you?'), () => {
     ]);
 
     assert.equal(await asyncIncrementor(), 9);
-  });
+  });*/
 
   it('createIncrementer', () => {
     const inc = createIncrementer();
+
+    //console.log(inc);
 
     assert.equal(inc.next().value, 1);
     assert.equal(inc.next().value, 2);
@@ -86,7 +88,7 @@ describe(('You are awesome, aren\'t you?'), () => {
       if (n > 10) break;
     }
   });
-
+/*
   it('returnBackInSecond', (done) => {
     const param = 'param';
 
@@ -177,5 +179,5 @@ describe(('You are awesome, aren\'t you?'), () => {
 
     arr = sortByProto([e, c, d, h]);
     assert.deepEqual(arr, [c, d, e, h]);
-  });
+  });*/
 });
